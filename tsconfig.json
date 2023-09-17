@@ -3,7 +3,10 @@
         "outDir": "./dist",
         "module": "esnext",
         "target": "es6",
-        "lib": ["es6", "dom"],
+        "lib": [
+            "es6",
+            "dom"
+        ],
         "sourceMap": true,
         "allowJs": true,
         "jsx": "react",
@@ -14,18 +17,49 @@
         "strictNullChecks": true,
         "baseUrl": "./",
         "rootDir": "./",
-        "typeRoots": ["./node_modules/@types", "./src/@types"],
+        "typeRoots": [
+            "./node_modules/@types",
+            "./src/@types"
+        ],
         "paths": {
-            "@src/*": ["src/*"],
-            "@images/*": ["src/images/*"],
-            "@styles/*": ["src/styles/*"],
-            "@components/*": ["src/components/*"]
+            "@src/*": [
+                "src/*"
+            ],
+            "@Assets/*": [
+                "src/Assets/*"
+            ],
+            "@Layouts/*": [
+                "src/Layouts/*"
+            ],
+            "@Services/*": [
+                "src/Services/*"
+            ],
+            "@Stores/*": [
+                "src/Stores/*"
+            ],
+            "@Pages/*": [
+                "src/Pages/*"
+            ],
+            "@Components/*": [
+                "src/Components/*"
+            ],
+            "@Utils/*": [
+                "src/Utils/*"
+            ],
+            "@Routes/*": [
+                "src/Routes/*"
+            ]
         },
         "allowSyntheticDefaultImports": true,
         "esModuleInterop": true,
         "importsNotUsedAsValues": "preserve",
         "incremental": true
     },
-    "include": ["src"],
-    "exclude": ["**/node_modules", "**/.*/"]
+    "include": [
+        "src"
+    ],
+    "exclude": [
+        "**/node_modules",
+        "**/.*/"
+    ]
 }

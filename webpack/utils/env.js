@@ -10,3 +10,5 @@ export const isDev = !isProd;
 export const rootDir = join(__dirname, '../../');
 export const webpackDir = join(__dirname, '../');
 export const defaultPort = 8080;
+
+console.log('x', process.env);
